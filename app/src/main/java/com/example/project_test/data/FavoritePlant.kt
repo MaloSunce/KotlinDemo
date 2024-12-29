@@ -18,6 +18,7 @@ import androidx.room.PrimaryKey
 import androidx.room.Query
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.project_test.R
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.serialization.json.Json
@@ -60,8 +61,6 @@ object FavoritePlants {
     // Read favorite plants from JSON file
     fun initFavorites(context: Context): Error? {
         file = File(context.getExternalFilesDir(null), filePath)
-        // Initialise the Room SQLite database
-        database = AppDatabase.getInstance(context.applicationContext)
 
         return if (file.exists()) {
             try {
@@ -74,6 +73,8 @@ object FavoritePlants {
                     plants.addAll(loadedPlants)
                 }
 
+                //plants.clear()
+                //plants.addAll(testPlants) // TODO remove when adding plants has been implemented
                 favoriteNames // Initialise favoriteNames
 
                 writeToFile()
@@ -253,7 +254,7 @@ class FavoritePlant(
     var nickname: String = "",
     var family: String = "",
     var latinName: String = "",
-    var imageURL: String = "",
+    var imageURL: Int = -1,
     var thumbnailURL: String = "",
     var otherNames: List<String> = listOf(),
     var edible: Boolean?,
@@ -270,7 +271,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Rosaceae",
         latinName = "Rosa",
-        imageURL = "",
+        imageURL = R.drawable.rose,
         otherNames = listOf("Rosa", "Queen of Flowers"),
         edible = true,
         origin = listOf("Asia", "Europe", "North America"),
@@ -282,7 +283,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Asteraceae",
         latinName = "Helianthus annuus",
-        imageURL = "",
+        imageURL = R.drawable.sunflower,
         otherNames = listOf("Common Sunflower"),
         edible = true,
         origin = listOf("North America"),
@@ -294,7 +295,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Liliaceae",
         latinName = "Tulipa",
-        imageURL = "",
+        imageURL = R.drawable.tulip,
         otherNames = listOf("Tulipan", "Tulipe"),
         edible = false,
         origin = listOf("Central Asia", "Turkey"),
@@ -306,7 +307,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Amaryllidaceae",
         latinName = "Narcissus",
-        imageURL = "",
+        imageURL = R.drawable.daffodill,
         otherNames = listOf("Jonquil", "Paperwhite"),
         edible = false,
         origin = listOf("Europe", "North Africa"),
@@ -318,7 +319,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Liliaceae",
         latinName = "Lilium",
-        imageURL = "",
+        imageURL = R.drawable.lilly,
         otherNames = listOf("True Lily"),
         edible = false,
         origin = listOf("Northern Hemisphere"),
@@ -330,7 +331,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Orchidaceae",
         latinName = "Orchidaceae",
-        imageURL = "",
+        imageURL = R.drawable.orchid,
         otherNames = listOf("Orchid"),
         edible = false,
         origin = listOf("Worldwide"),
@@ -342,7 +343,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Asteraceae",
         latinName = "Bellis perennis",
-        imageURL = "",
+        imageURL = R.drawable.daisy,
         otherNames = listOf("Common Daisy", "Lawn Daisy"),
         edible = true,
         origin = listOf("Europe", "North America"),
@@ -354,7 +355,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Asteraceae",
         latinName = "Tagetes",
-        imageURL = "",
+        imageURL = R.drawable.marigold,
         otherNames = listOf("Calendula"),
         edible = true,
         origin = listOf("North America", "South America"),
@@ -366,7 +367,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Lamiaceae",
         latinName = "Lavandula",
-        imageURL = "",
+        imageURL = R.drawable.lavender,
         otherNames = listOf("Lavandula", "Lavandin"),
         edible = true,
         origin = listOf("Mediterranean", "Middle East", "India"),
@@ -378,7 +379,7 @@ val testPlants = mutableListOf(
         nickname = "",
         family = "Paeoniaceae",
         latinName = "Paeonia",
-        imageURL = "",
+        imageURL = R.drawable.peony,
         otherNames = listOf("Peony Rose"),
         edible = false,
         origin = listOf("Europe", "Asia", "Western North America"),

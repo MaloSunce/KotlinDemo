@@ -75,7 +75,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import coil3.compose.AsyncImage
 import com.example.project_test.R
 import com.example.project_test.data.FavoritePlant
 import com.example.project_test.data.FavoritePlants
@@ -438,9 +437,10 @@ fun FavColumnItem(
                 )
             }
         }
-        if (plant.imageURL != "") {
-            AsyncImage(
-                model = plant.imageURL,
+        // Use image if available
+        if (plant.imageURL >= 0) {
+            Image(
+                painter = painterResource(plant.imageURL),
                 contentDescription = "Image of ${plant.name}",
                 modifier = Modifier
                     .padding(start = 15.dp, top = 25.dp)
@@ -449,7 +449,7 @@ fun FavColumnItem(
                     .size(80.dp),
                 contentScale = ContentScale.Crop
             )
-        } else {
+        } else { // Otherwise use placeholder image
             Image(
                 painter = painterResource(R.drawable.flower_placeholder),
                 contentDescription = "Placeholder image of flower",
@@ -546,7 +546,7 @@ fun ExpandFavItem(
             onClick = { // Navigate to DetailsScreen
                 Toast.makeText(
                     context,
-                    "The demo does not include this functionality.",
+                    "This functionality is not included in the demo.",
                     Toast.LENGTH_LONG).show()
                 //navController.navigate(Screen.PlantInfo.withArgs(plant.id.toString()))
                 //ScreenSelector.incrementWheelIndex(-2)
@@ -638,7 +638,6 @@ fun FavoriteScreenPreview() {
     }
 }
 
-@OptIn(ExperimentalAnimationApi::class)
 @Preview(showBackground = true, widthDp = 300, heightDp = 300)
 @Composable
 fun ExpandFavItemPreview() {

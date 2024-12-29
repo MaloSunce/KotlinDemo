@@ -172,7 +172,7 @@ object ScreenSelector {
             )
             // Sunflower icon
             Image(
-                painter = painterResource(R.drawable.sunflower),
+                painter = painterResource(R.drawable.sunflower_icon),
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.size(screenWidthDp * 0.67f)

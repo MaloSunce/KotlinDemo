@@ -48,7 +48,7 @@ fun SplashScreen() {
     ) {
         LeafAnimation()
         Image(
-            painter = painterResource(R.drawable.sunflower),
+            painter = painterResource(R.drawable.sunflower_icon),
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier
