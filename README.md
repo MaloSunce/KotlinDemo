@@ -15,14 +15,14 @@ and can be found on https://www.freepik.com/icon/sunflower_1497177#fromView=sear
 
 ## Screenshots
 <p align="center">
-    <img src="img_2.png" alt="Splash screen" width="30%" />
-    <img src="img_1.png" alt="Favorites screen" width="30%" />
-    <img src="img.png" alt="Expanded favorites item" width="29%" />
+    <img src="screenshots/img_2.png" alt="Splash screen" width="30%" />
+    <img src="screenshots/img_1.png" alt="Favorites screen" width="30%" />
+    <img src="screenshots/img.png" alt="Expanded favorites item" width="29%" />
 </p>
 
 <p align="center">
-    <img src="img_3.png" alt="All plants screen" width="30%" />
-    <img src="img_4.png" alt="No-connection error screen" width="30%" />
-    <img src="img_5.png" alt="Settings screen" width="30.2%" />
+    <img src="screenshots/img_3.png" alt="All plants screen" width="30%" />
+    <img src="screenshots/img_4.png" alt="No-connection error screen" width="30%" />
+    <img src="screenshots/img_5.png" alt="Settings screen" width="30.2%" />
 </p>
 
