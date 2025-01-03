@@ -73,8 +73,6 @@ object FavoritePlants {
                     plants.addAll(loadedPlants)
                 }
 
-                //plants.clear()
-                //plants.addAll(testPlants) // TODO remove when adding plants has been implemented
                 favoriteNames // Initialise favoriteNames
 
                 writeToFile()

@@ -6,6 +6,10 @@ sealed class Screen(val route: String) {
     data object Favorites : Screen(route = "favorites_screen")
     data object Demo : Screen(route = "demo_screen")
 
+    data object Demo2 : Screen(route = "demo_screen2")
+
+    data object Demo3 : Screen(route = "demo_screen3")
+
     //...
 
     // Build the args into a string

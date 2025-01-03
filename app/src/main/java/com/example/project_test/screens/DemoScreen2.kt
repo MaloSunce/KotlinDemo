@@ -31,7 +31,7 @@ import com.example.project_test.R
 import com.example.project_test.ui.theme.PLantBuddiesTheme
 
 @Composable
-fun DemoScreen(
+fun DemoScreen2(
     navController: NavController,
 ) {
     Card(
@@ -78,7 +78,7 @@ fun DemoScreen(
                 .padding(top = 200.dp)
         ) {
             Text(
-                text = "This is a demo screen",
+                text = "This is another demo screen.",
                 style = TextStyle(color = MaterialTheme.colorScheme.tertiary),
                 fontWeight = FontWeight.Bold,
                 fontSize = 25.sp,
@@ -90,9 +90,9 @@ fun DemoScreen(
 
 @Preview(showBackground = true, widthDp = 400, heightDp = 800)
 @Composable
-fun DemoScreenPreview() {
+fun DemoScreen2Preview() {
     PLantBuddiesTheme {
-        DemoScreen(
+        DemoScreen2(
             rememberNavController()
             )
     }

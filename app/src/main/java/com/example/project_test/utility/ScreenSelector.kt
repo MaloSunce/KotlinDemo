@@ -82,8 +82,8 @@ object ScreenSelector {
             add(context.getString(R.string.favorites))
             add(context.getString(R.string.settings))
             add(context.getString(R.string.demo_screen))
-            add(context.getString(R.string.demo_screen))
-            add(context.getString(R.string.demo_screen))
+            add(context.getString(R.string.demo_screen2))
+            add(context.getString(R.string.demo_screen3))
         }
 
         // Screen selector state trackers
@@ -140,6 +140,8 @@ object ScreenSelector {
             Screen.Favorites.route,
             Screen.Settings.route,
             Screen.Demo.route,
+            Screen.Demo2.route,
+            Screen.Demo3.route,
         )
         // TODO Toast on error, favorites currently set as default route
         val route = screenRoutes.getOrNull(currentScreen) ?: Screen.Favorites.route

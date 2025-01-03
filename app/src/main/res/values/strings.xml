@@ -2,5 +2,7 @@
     <string name="app_name">KotlinDemo</string>
     <string name="favorites">Favorites</string>
     <string name="settings">Settings</string>
-    <string name="demo_screen">Demo</string>
+    <string name="demo_screen">Demo 1</string>
+    <string name="demo_screen2">Demo 2</string>
+    <string name="demo_screen3">Demo 3</string>
 </resources>

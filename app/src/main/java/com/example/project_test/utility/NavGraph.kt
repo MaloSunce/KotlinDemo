@@ -87,6 +87,24 @@ fun SetupNavGraph(
                 navController,
             )
         }
+        composable(
+            route = Screen.Demo2.route,
+            enterTransition = { enterTransition(swipeRight) },
+            exitTransition = { exitTransition(swipeRight) },
+        ) {
+            DemoScreen(
+                navController,
+            )
+        }
+        composable(
+            route = Screen.Demo3.route,
+            enterTransition = { enterTransition(swipeRight) },
+            exitTransition = { exitTransition(swipeRight) },
+        ) {
+            DemoScreen(
+                navController,
+            )
+        }
     }
 
     // Screen selector container (NB must be rendered after NavGraph set-up)
