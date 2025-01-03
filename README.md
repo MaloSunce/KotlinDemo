@@ -1,6 +1,6 @@
 # Kotlin Demo - PlantBuddies
-This is a demo for the PlantBuddies application, and showcases a selection of the available
-functionalities. Unlike the full version, this demo does not utilise the Perenual API nor the related cacheing mechanism.
+This is a demo for the PlantBuddies application. It showcases a limited selection of the available
+functionalities. This demo does not utilise the PerenualAPI or the related cacheing mechanism, unlike the full version.
 
 ## Screenshots
 <p align="center">
@@ -14,4 +14,4 @@ The sunflower icon featured on the screen selector and splash screen is designed
 and can be found on https://www.freepik.com/icon/sunflower_1497177#fromView=search&page=1&position=6&uuid=d9e6976c-a51e-48f8-96a4-aee4040c0251
 
 ## Attributions
-PlantBuddies was originally designed and developed by a group of 4 developers. This demo mostly features code written by Sara Djordjevic.
+PlantBuddies was originally designed and developed by a group of 4 bachelor students at NTNU for a mobile programming class. This demo mostly features code written by Sara Djordjevic.
