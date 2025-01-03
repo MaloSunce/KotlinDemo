@@ -24,7 +24,7 @@ import androidx.navigation.compose.composable
 import com.example.project_test.Screen
 import com.example.project_test.screens.DemoScreen
 import com.example.project_test.screens.DemoScreen2
-import com.example.project_test.screens.DemoScreen3
+import com.example.project_test.screens.AllPlants
 import com.example.project_test.screens.FavoriteScreen
 import com.example.project_test.screens.SettingsScreen
 import com.example.project_test.utility.ScreenSelector.DisplayScreenSelector
@@ -103,7 +103,7 @@ fun SetupNavGraph(
             enterTransition = { enterTransition(swipeRight) },
             exitTransition = { exitTransition(swipeRight) },
         ) {
-            DemoScreen3(
+            AllPlants(
                 navController,
             )
         }

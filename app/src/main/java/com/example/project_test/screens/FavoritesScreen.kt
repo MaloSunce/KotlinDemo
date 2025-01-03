@@ -402,7 +402,7 @@ fun FavColumnItem(
                                 if (editPlantID == plant.id.toString()) {
                                     onEditPlant(null)
                                 }
-                                FavoritePlants.writeToFile()
+                                FavoritePlants.updatePersistentStorage()
                             }
                         }
                     ) {

@@ -31,7 +31,7 @@ import com.example.project_test.R
 import com.example.project_test.ui.theme.PLantBuddiesTheme
 
 @Composable
-fun DemoScreen3(
+fun AllPlants(
     navController: NavController,
 ) {
     Card(
@@ -58,7 +58,7 @@ fun DemoScreen3(
                 .padding(start = 10.dp)
         ) {
             Text( // Screen title
-                text = stringResource(id = R.string.demo_screen3),
+                text = stringResource(id = R.string.all_plants),
                 style = TextStyle(color = MaterialTheme.colorScheme.onBackground),
                 fontSize = 30.sp,
                 modifier = Modifier
@@ -92,7 +92,7 @@ fun DemoScreen3(
 @Composable
 fun DemoScreen3Preview() {
     PLantBuddiesTheme {
-        DemoScreen3(
+        AllPlants(
             rememberNavController()
             )
     }

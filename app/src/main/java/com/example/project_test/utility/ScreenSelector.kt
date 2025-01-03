@@ -83,7 +83,7 @@ object ScreenSelector {
             add(context.getString(R.string.settings))
             add(context.getString(R.string.demo_screen))
             add(context.getString(R.string.demo_screen2))
-            add(context.getString(R.string.demo_screen3))
+            add(context.getString(R.string.all_plants))
         }
 
         // Screen selector state trackers
