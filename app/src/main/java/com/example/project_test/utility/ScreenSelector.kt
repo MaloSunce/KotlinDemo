@@ -61,7 +61,7 @@ object ScreenSelector {
         }
 
     // Function to update wheelIndex safely
-    private fun incrementWheelIndex(indexIncrement: Int) {
+    fun incrementWheelIndex(indexIncrement: Int) {
         _wheelIndex.intValue += indexIncrement
     }
 

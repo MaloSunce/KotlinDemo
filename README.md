@@ -4,9 +4,15 @@ functionalities. This demo does not utilise the PerenualAPI or the related cache
 
 ## Screenshots
 <p align="center">
-    <img src="img_2.png" alt="Image 2" width="30%" />
-    <img src="img_1.png" alt="Image 1" width="30%" />
-    <img src="img.png" alt="Image 3" width="29%" />
+    <img src="img_2.png" alt="Splash screen" width="30%" />
+    <img src="img_1.png" alt="Favorites screen" width="30%" />
+    <img src="img.png" alt="Expanded favorites item" width="29%" />
+</p>
+
+<p align="center">
+    <img src="img_3.png" alt="All plants screen" width="30%" />
+    <img src="img_4.png" alt="No-connection error screen" width="30%" />
+    <img src="img_5.png" alt="Settings screen" width="29%" />
 </p>
 
 ## Icons
