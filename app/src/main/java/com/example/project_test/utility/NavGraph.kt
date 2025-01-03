@@ -81,7 +81,7 @@ fun SetupNavGraph(
             )
         }
         composable(
-            route = Screen.Demo.route,
+            route = Screen.Demo1.route,
             enterTransition = { enterTransition(swipeRight) },
             exitTransition = { exitTransition(swipeRight) },
         ) {

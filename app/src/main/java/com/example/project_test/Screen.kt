@@ -4,7 +4,7 @@ sealed class Screen(val route: String) {
     // Each screen inherits from the Screen class
     data object Settings : Screen(route = "settings_screen")
     data object Favorites : Screen(route = "favorites_screen")
-    data object Demo : Screen(route = "demo_screen")
+    data object Demo1 : Screen(route = "demo_screen")
 
     data object Demo2 : Screen(route = "demo_screen2")
 

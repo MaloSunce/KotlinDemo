@@ -61,7 +61,7 @@ object ScreenSelector {
         }
 
     // Function to update wheelIndex safely
-    fun incrementWheelIndex(indexIncrement: Int) {
+    private fun incrementWheelIndex(indexIncrement: Int) {
         _wheelIndex.intValue += indexIncrement
     }
 
@@ -116,12 +116,10 @@ object ScreenSelector {
                 onDragEnd = {
                     if (totalDragAmount > 100) { // Decrement on left swipe
                         onSwipe(false)
-                        incrementWheelIndex((wheelIndex - 1 + numOfScreens) % numOfScreens)
-                        //wheelIndex -= 1
+                        incrementWheelIndex(-1)
                     } else if (totalDragAmount < -100) { // Increment on right swipe
                         onSwipe(true)
-                        incrementWheelIndex((wheelIndex + 1) % numOfScreens)
-                        //wheelIndex += 1
+                        incrementWheelIndex(1)
                     }
                 }
             )
@@ -135,14 +133,15 @@ object ScreenSelector {
         }
 
 
-        // Screen navigation
+        // Screen navigation NB has to be in the correct order, i.e. same order as on the wheel
         val screenRoutes = listOf(
             Screen.Favorites.route,
             Screen.Settings.route,
-            Screen.Demo.route,
+            Screen.Demo1.route,
             Screen.Demo2.route,
             Screen.Demo3.route,
         )
+
         // TODO Toast on error, favorites currently set as default route
         val route = screenRoutes.getOrNull(currentScreen) ?: Screen.Favorites.route
         navController.navigate(route)
