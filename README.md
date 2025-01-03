@@ -3,9 +3,11 @@ This is a demo for the PlantBuddies application, and showcases a selection of th
 functionalities. Unlike the full version, this demo does not utilise the Perenual API nor the related cacheing mechanism.
 
 ## Screenshots
-![img_2.png](img_2.png)
-![img.png](img.png)
-![img_1.png](img_1.png)
+<p align="center">
+    <img src="img_2.png" alt="Image 2" width="30%" />
+    <img src="img_1.png" alt="Image 1" width="30%" />
+    <img src="img.png" alt="Image 3" width="29%" />
+</p>
 
 ## Icons
 The sunflower icon featured on the screen selector and splash screen is designed by Freepik, 
