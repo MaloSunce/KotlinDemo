@@ -74,7 +74,7 @@ fun DemoScreen(
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(40.dp)
+                .padding(45.dp)
                 .padding(top = 200.dp)
         ) {
             Text(

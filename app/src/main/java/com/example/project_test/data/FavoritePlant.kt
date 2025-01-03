@@ -73,6 +73,11 @@ object FavoritePlants {
                     plants.addAll(loadedPlants)
                 }
 
+                // TODO: adding test plants if list is empty
+                if (plants.size < 1) {
+                    plants.addAll(testPlants)
+                }
+
                 favoriteNames // Initialise favoriteNames
 
                 writeToFile()
@@ -111,7 +116,7 @@ object FavoritePlants {
         suspend fun deleteFavoritePlantStore(id: Int)
     }
 
-    // Room database to permanently store plant data of favourited plants
+    // Room database to permanently store plant data of bookmarked plants
     @Database(entities = [FavoritePlantEntity::class], version = 1)
     abstract class AppDatabase : RoomDatabase() {
         abstract fun favoritePlantDao(): FavoritePlantDao

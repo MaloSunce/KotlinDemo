@@ -3,7 +3,9 @@ This is a demo for the PlantBuddies application, and showcases a selection of th
 functionalities. Unlike the full version, this demo does not utilise the Perenual API nor the related cacheing mechanism.
 
 ## Screenshots
-
+![img_2.png](img_2.png)
+![img.png](img.png)
+![img_1.png](img_1.png)
 
 ## Icons
 The sunflower icon featured on the screen selector and splash screen is designed by Freepik, 

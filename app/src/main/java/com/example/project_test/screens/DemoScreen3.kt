@@ -58,7 +58,7 @@ fun DemoScreen3(
                 .padding(start = 10.dp)
         ) {
             Text( // Screen title
-                text = stringResource(id = R.string.demo_screen),
+                text = stringResource(id = R.string.demo_screen3),
                 style = TextStyle(color = MaterialTheme.colorScheme.onBackground),
                 fontSize = 30.sp,
                 modifier = Modifier
